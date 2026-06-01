@@ -1,18 +1,20 @@
+import java.util.Objects;
+
 public class Books {
 
+    private String Code;
     private String Series;
     private String Name;
     private String date;
     private Integer Copies;
 
-    public Books() {
+    public Books(String code) {
+        Code = code;
     }
 
-    public Books(String series) {
-        Series = series;
-    }
 
-    public Books(String series, String name, String date, Integer copies) {
+    public Books(String code, String series, String name, String date, Integer copies) {
+        Code = code;
         Series = series;
         Name = name;
         this.date = date;
@@ -50,4 +52,17 @@ public class Books {
     public void setCopies(Integer copies) {
         Copies = copies;
     }
+
+
+    public String getCode() {
+        return Code;
+    }
+
+    public void setCode(String code) {
+        Code = code;
+    }
+
+
+
+
 }
