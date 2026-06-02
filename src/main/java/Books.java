@@ -21,6 +21,10 @@ public class Books {
         Copies = copies;
     }
 
+    public Books() {
+
+    }
+
     public String getSeries() {
         return Series;
     }
