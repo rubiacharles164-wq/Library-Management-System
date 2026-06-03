@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Books {
+public class Books extends Library {
 
     private String Code;
     private String Series;

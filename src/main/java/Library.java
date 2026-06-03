@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-    List<Books> books = new ArrayList<Books>();
+    static List<Library> library = new ArrayList<Library>();
 
-    StringBuilder Display = new StringBuilder();
-
-
+    public static void addBook(Books book1) {
+        library.addAll(book1, book2);
+    }
 }
 
 
