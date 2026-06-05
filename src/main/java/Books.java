@@ -6,19 +6,19 @@ public class Books extends Library {
     private String Series;
     private String Name;
     private String date;
-    private Integer Copies;
+
 
     public Books(String code) {
         Code = code;
     }
 
 
-    public Books(String code, String series, String name, String date, Integer copies) {
+    public Books(String code, String series, String name, String date) {
         Code = code;
         Series = series;
         Name = name;
         this.date = date;
-        Copies = copies;
+
     }
 
     public Books() {
@@ -49,15 +49,6 @@ public class Books extends Library {
         this.date = date;
     }
 
-    public Integer getCopies() {
-        return Copies;
-    }
-
-    public void setCopies(Integer copies) {
-        Copies = copies;
-    }
-
-
     public String getCode() {
         return Code;
     }
@@ -66,7 +57,10 @@ public class Books extends Library {
         Code = code;
     }
 
-
+    @Override
+    public String toString(){
+        return "code: " + getCode() +  " Series: " + getSeries() + " Name: " + getName() + " Date: " + getDate();
+    }
 
 
 }
