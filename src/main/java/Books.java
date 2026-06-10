@@ -1,6 +1,6 @@
-import java.util.Objects;
 
-public class Books extends Library {
+//Books class purpose to create parameter for objects construction and printouts
+public class Books {
 
     private String Code;
     private String Series;
